@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "vijay9592/nodejs-devops-app:latest"
+        DOCKER_IMAGE = "ranjanieswararn12-code/nodejs-devops-app:latest"
     }
 
     stages {
 
         stage('Clone') {
             steps {
-                git 'https://github.com/vijay9592/DevOps-Capstone.git'
+                git 'https://github.com/ranjanieswararn12-code/DevOps-Capstone.git'
             }
         }
 
@@ -47,4 +47,5 @@ pipeline {
             }
         }
     }
+
 }
